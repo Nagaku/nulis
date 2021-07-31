@@ -1,0 +1,28 @@
+com/example/nulis/model/ModelChapter.java
+ com.example.nulis.model.ModelChapter
+com/example/nulis/model/ModelChapters.java
+ com.example.nulis.model.ModelChapters
+com/example/nulis/FragmentTulis.java
+ com.example.nulis.FragmentTulis
+ com.example.nulis.FragmentTulis$1
+ com.example.nulis.FragmentTulis$2
+com/example/nulis/BuildConfig.java
+ com.example.nulis.BuildConfig
+com/example/nulis/SplashActivity.java
+ com.example.nulis.SplashActivity
+ com.example.nulis.SplashActivity$1
+com/example/nulis/model/ModelStory.java
+ com.example.nulis.model.ModelStory
+com/example/nulis/adapter/MainRecycleAdapter.java
+ com.example.nulis.adapter.MainRecycleAdapter
+ com.example.nulis.adapter.MainRecycleAdapter$OnCallbackListener
+ com.example.nulis.adapter.MainRecycleAdapter$ViewHolder
+com/example/nulis/FragmentExplore.java
+ com.example.nulis.FragmentExplore
+com/example/nulis/FragmentProfile.java
+ com.example.nulis.FragmentProfile
+com/example/nulis/MainActivity.java
+ com.example.nulis.MainActivity
+ com.example.nulis.MainActivity$1
+com/example/nulis/FragmentChapters.java
+ com.example.nulis.FragmentChapters
