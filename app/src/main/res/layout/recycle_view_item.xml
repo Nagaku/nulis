@@ -1,20 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="100dp"
-    android:background="@drawable/wooden_cartoon"
+    android:id="@+id/recycle_view_base"
+    android:layout_height="140dp"
+    android:background="@drawable/assets_recycle"
     android:orientation="vertical">
 
     <TextView
         android:id="@+id/recycle_view_judul"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ADKOAWKDOAW" />
+        android:text="ADKOAWKDOAW"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/text_terang"
+        android:textSize="16sp"
+        android:layout_marginTop="50dp"
+        android:shadowColor="@color/text_gelap"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"/>
 
-    <TextView
-        android:id="@+id/recycle_view_penulis"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="qweqwe" />
+<!--    <TextView-->
+<!--        android:id="@+id/recycle_view_penulis"-->
+<!--        android:layout_below="@id/recycle_view_judul"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="qweqwe"-->
+<!--        android:textColor="@color/text_terang"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:shadowColor="@color/text_gelap"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="16sp"-->
+<!--        android:shadowDx="1"-->
+<!--        android:shadowDy="1"-->
+<!--        android:shadowRadius="1"/>-->
 
-</LinearLayout>
+</RelativeLayout>

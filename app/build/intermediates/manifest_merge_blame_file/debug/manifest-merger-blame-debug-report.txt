@@ -45,6 +45,15 @@
 28        <activity android:name="com.example.nulis.MainActivity" />
 28-->D:\AndroidStudioProjects\Nulis\app\src\main\AndroidManifest.xml:19:9-50
 28-->D:\AndroidStudioProjects\Nulis\app\src\main\AndroidManifest.xml:19:19-47
-29    </application>
-30
-31</manifest>
+29
+30        <service
+30-->[androidx.room:room-runtime:2.3.0] C:\Users\mimel\.gradle\caches\transforms-2\files-2.1\4697116d8dfb0587edd7e3636671009b\room-runtime-2.3.0\AndroidManifest.xml:25:9-28:40
+31            android:name="androidx.room.MultiInstanceInvalidationService"
+31-->[androidx.room:room-runtime:2.3.0] C:\Users\mimel\.gradle\caches\transforms-2\files-2.1\4697116d8dfb0587edd7e3636671009b\room-runtime-2.3.0\AndroidManifest.xml:26:13-74
+32            android:directBootAware="true"
+32-->[androidx.room:room-runtime:2.3.0] C:\Users\mimel\.gradle\caches\transforms-2\files-2.1\4697116d8dfb0587edd7e3636671009b\room-runtime-2.3.0\AndroidManifest.xml:27:13-43
+33            android:exported="false" />
+33-->[androidx.room:room-runtime:2.3.0] C:\Users\mimel\.gradle\caches\transforms-2\files-2.1\4697116d8dfb0587edd7e3636671009b\room-runtime-2.3.0\AndroidManifest.xml:28:13-37
+34    </application>
+35
+36</manifest>

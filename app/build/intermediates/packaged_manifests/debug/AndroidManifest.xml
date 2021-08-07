@@ -26,6 +26,11 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.nulis.MainActivity" />
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:directBootAware="true"
+            android:exported="false" />
     </application>
 
 </manifest>

@@ -1013,6 +1013,9 @@ color cardview_light_background
 color cardview_shadow_end_color
 color cardview_shadow_start_color
 color checkbox_themeable_attribute_color
+color cokelat_gelap
+color cokelat_terang
+color cream
 color design_bottom_navigation_shadow_color
 color design_box_stroke_color
 color design_dark_default_color_background
@@ -1177,6 +1180,8 @@ color teal_200
 color teal_700
 color test_mtrl_calendar_day
 color test_mtrl_calendar_day_selected
+color text_gelap
+color text_terang
 color tooltip_background_dark
 color tooltip_background_light
 color white
@@ -1685,8 +1690,16 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable assets
+drawable assets_ok
+drawable assets_plus
+drawable assets_recycle
+drawable assets_remove
+drawable assets_x
 drawable avd_hide_password
 drawable avd_show_password
+drawable background
+drawable bottom
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -1701,7 +1714,11 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable drawable_activity_main
+drawable drawable_batal
+drawable drawable_buang
+drawable drawable_ok
 drawable drawable_splash_screen
+drawable drawable_tambah
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -1743,6 +1760,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable profile
 drawable splash_screen
 drawable test_custom_background
 drawable tooltip_frame_dark
@@ -1838,7 +1856,6 @@ id blocking
 id bottom
 id bounce
 id buttonPanel
-id button_go
 id cache_measures
 id cancel_action
 id cancel_button
@@ -1847,6 +1864,7 @@ id center_horizontal
 id center_vertical
 id chain
 id chains
+id chapter_rv_1
 id checkbox
 id checked
 id chip
@@ -1911,6 +1929,7 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id explore_rv_1
 id fade
 id fill
 id fill_horizontal
@@ -1921,6 +1940,12 @@ id fixed
 id flip
 id floating
 id forever
+id form_chapter_batal
+id form_chapter_tambah
+id form_chapter_title
+id form_story_batal
+id form_story_tambah
+id form_story_title
 id fragment_container_view_tag
 id frame
 id ghost_view
@@ -1960,6 +1985,7 @@ id linear
 id listMode
 id list_item
 id main_bnv_1
+id main_btn_tmbh
 id main_ll_1
 id main_rv_1
 id masked
@@ -2055,8 +2081,10 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id recycle_view_base
+id recycle_view_chapter_judul
+id recycle_view_chapter_no
 id recycle_view_judul
-id recycle_view_penulis
 id reverseSawtooth
 id right
 id rightToLeft
@@ -2134,7 +2162,6 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
-id test123
 id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
 id test_radiobutton_android_button_tint
@@ -2271,6 +2298,8 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout form_chapter
+layout form_chapters
 layout form_story
 layout fragment_chapters
 layout fragment_explore
@@ -2334,6 +2363,7 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout recycle_view_chapters
 layout recycle_view_item
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
