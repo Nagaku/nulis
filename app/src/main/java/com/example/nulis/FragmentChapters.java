@@ -7,11 +7,13 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.nulis.adapter.ChaptersRecycleAdapter;
@@ -47,9 +49,10 @@ public class FragmentChapters extends Fragment implements ViewChapter, GlobalFra
     private RecyclerView recycleView;
     private ChaptersRecycleAdapter recycleAdapter;
     private List<ModelChapter> chapters = new ArrayList<ModelChapter>();
+    private List<ModelChapter> long_chapters = new ArrayList<ModelChapter>();
     private int noStory;
     private ModelChapter tempModel;
-    private PresenterChapter presenterStory;
+    private PresenterChapter presenterChapter;
 
     public FragmentChapters() {
         // Required empty public constructor
@@ -91,7 +94,23 @@ public class FragmentChapters extends Fragment implements ViewChapter, GlobalFra
         recycleView = view.findViewById(R.id.chapter_rv_1);
         recycleView.setLayoutManager(new LinearLayoutManager(view.getContext()));
         recycleAdapter = new ChaptersRecycleAdapter(chapters);
-        presenterStory = new PresenterChapterImpl(this);
+        recycleView.setAdapter(recycleAdapter);
+        presenterChapter = new PresenterChapterImpl(this, noStory);
+        this.noStory = MainActivity.getNo();
+        recycleAdapter.setListener(new ChaptersRecycleAdapter.OnCallbackListener(){
+            @Override
+            public void onClick(ModelChapter chapter) {
+                MainActivity.getFm().beginTransaction().hide(MainActivity.getFragmentActive()).show(MainActivity.getFragment5()).commit();
+                MainActivity.setFragmentActive(MainActivity.fragment5);
+                MainActivity.setNoChapter(chapter.getNoChapter());
+            }
+        });
+        recycleAdapter.setListener_long(new ChaptersRecycleAdapter.OnLongCallbackListener() {
+            @Override
+            public void onClick(List<ModelChapter> chapter) {
+                long_chapters = chapter;
+            }
+        });
         recycleView.setAdapter(recycleAdapter);
         return view;
     }
@@ -101,22 +120,96 @@ public class FragmentChapters extends Fragment implements ViewChapter, GlobalFra
             MainActivity.setFragmentHandler(this);
             MainActivity.setCurrent_page(MainActivity.page.CHAPTERS);
             MainActivity.setButton();
+            MainActivity.getJudul_page().setText(MainActivity.judul_story);
+            this.noStory = MainActivity.getNo();
+            presenterChapter = new PresenterChapterImpl(this, noStory);
         }
     }
 
     @Override
-    public void showDialog(View v) {
+    public void btnTambah(View v) {
         AppCompatDialog dialog = new AppCompatDialog(v.getContext());
         dialog.setContentView(R.layout.form_chapters);
         dialog.setTitle("Add New Chapter");
+        TextView option = dialog.findViewById(R.id.form_chapter_option);
+        option.setText("Tambah Chapter");
         EditText title = dialog.findViewById(R.id.form_chapter_title);
         Button tambah = dialog.findViewById(R.id.form_chapter_tambah);
         Button batal = dialog.findViewById(R.id.form_chapter_batal);
         tambah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                tempModel = new ModelChapter(0, 0, title.getText().toString());
-                presenterStory.save(tempModel);
+                tempModel = new ModelChapter(0, 0, noStory,title.getText().toString(), "");
+                presenterChapter.save(tempModel);
+                dialog.dismiss();
+            }
+        });
+        batal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+
+        if(!dialog.isShowing())
+            dialog.show();
+    }
+
+    @Override
+    public void btnEdit(View view) {
+        AppCompatDialog dialog = new AppCompatDialog(view.getContext());
+        dialog.setContentView(R.layout.form_chapters);
+        dialog.setTitle("Edit Chapter");
+        TextView option = dialog.findViewById(R.id.form_chapter_option);
+        option.setText("Edit Chapter");
+        EditText title = dialog.findViewById(R.id.form_chapter_title);
+        Button tambah = dialog.findViewById(R.id.form_chapter_tambah);
+        Button batal = dialog.findViewById(R.id.form_chapter_batal);
+        title.setText(long_chapters.get(0).getJudul());
+        tambah.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                long_chapters.get(0).setJudul(title.getText().toString());
+                presenterChapter.update(long_chapters.get(0));
+                dialog.dismiss();
+            }
+        });
+        batal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+
+        if(!dialog.isShowing())
+            dialog.show();
+    }
+
+    @Override
+    public void btnBack(View view) {
+
+    }
+
+    @Override
+    public void btnHapus(View view) {
+        AppCompatDialog dialog = new AppCompatDialog(view.getContext());
+        dialog.setContentView(R.layout.form_chapters);
+        TextView option = dialog.findViewById(R.id.form_chapter_option);
+        option.setText("Delete Chapter");
+        EditText title = dialog.findViewById(R.id.form_chapter_title);
+        Button tambah = dialog.findViewById(R.id.form_chapter_tambah);
+        Button batal = dialog.findViewById(R.id.form_chapter_batal);
+        if ((long_chapters.size() -1 ) == 0)
+            title.setText(long_chapters.get(0).getJudul() );
+        else
+        title.setText(long_chapters.get(0).getJudul() + " and " + (long_chapters.size() -1 ) + " others");
+        title.setFocusable(false);
+        tambah.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                for (ModelChapter temp_chapter: long_chapters) {
+                    presenterChapter.delete(temp_chapter);
+                }
                 dialog.dismiss();
             }
         });
@@ -141,16 +234,18 @@ public class FragmentChapters extends Fragment implements ViewChapter, GlobalFra
 
     @Override
     public void onSave() {
-        presenterStory.load();
+        presenterChapter.load();
     }
 
     @Override
     public void onDelete() {
-
+        presenterChapter.load();
+        MainActivity.setIs_on_long(0);
+        MainActivity.toogle_button();
     }
 
     @Override
     public void onUpdate() {
-
+        presenterChapter.load();
     }
 }

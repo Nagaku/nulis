@@ -7,11 +7,13 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.nulis.adapter.MainRecycleAdapter;
@@ -39,6 +41,7 @@ public class FragmentTulis extends Fragment implements ViewStory, GlobalFragment
     private RecyclerView recycleView;
     private MainRecycleAdapter recycleAdapter;
     private List<ModelStory> stories = new ArrayList<ModelStory>();
+    private List<ModelStory> long_stories = new ArrayList<ModelStory>();
     private ModelStory tempModel;
     private PresenterStory presenterStory;
 
@@ -95,10 +98,27 @@ public class FragmentTulis extends Fragment implements ViewStory, GlobalFragment
                 MainActivity.getFm().beginTransaction().hide(MainActivity.getFragmentActive()).show(MainActivity.getFragment4()).commit();
                 MainActivity.setFragmentActive(MainActivity.fragment4);
                 MainActivity.setNo(story.getNoStory());
+                MainActivity.judul_story = story.getJudul().toString();
+            }
+        });
+        recycleAdapter.setListener_long(new MainRecycleAdapter.OnLongCallbackListener() {
+            @Override
+            public void onClick(List<ModelStory> story) {
+                long_stories = story;
             }
         });
         recycleView.setAdapter(recycleAdapter);
         return view;
+    }
+
+    @Override
+    public void onHiddenChanged(boolean hidden) {
+        if (!hidden) {
+            MainActivity.setFragmentHandler(this);
+            MainActivity.setCurrent_page(MainActivity.page.STORY);
+            MainActivity.setButton();
+            MainActivity.getJudul_page().setText("Story");
+        }
     }
 
     @Override
@@ -115,19 +135,23 @@ public class FragmentTulis extends Fragment implements ViewStory, GlobalFragment
 
     @Override
     public void onDelete() {
-
+        presenterStory.load();
+        MainActivity.setIs_on_long(0);
+        MainActivity.toogle_button();
     }
 
     @Override
     public void onUpdate() {
-
+        presenterStory.load();
     }
 
     @Override
-    public void showDialog(View v) {
+    public void btnTambah(View v) {
         AppCompatDialog dialog = new AppCompatDialog(v.getContext());
         dialog.setContentView(R.layout.form_story);
         dialog.setTitle("Add New Story");
+        TextView option = dialog.findViewById(R.id.form_story_option);
+        option.setText("Add Story");
         EditText title = dialog.findViewById(R.id.form_story_title);
         Button tambah = dialog.findViewById(R.id.form_story_tambah);
         Button batal = dialog.findViewById(R.id.form_story_batal);
@@ -150,9 +174,74 @@ public class FragmentTulis extends Fragment implements ViewStory, GlobalFragment
             dialog.show();
     }
 
-    public static void ola() {
-        Toast.makeText(MainActivity.getContextOfApplication(),"ola", Toast.LENGTH_SHORT).show();
+    @Override
+    public void btnEdit(View view) {
+
+        AppCompatDialog dialog = new AppCompatDialog(view.getContext());
+        dialog.setContentView(R.layout.form_story);
+        dialog.setTitle("Edit Story");
+        TextView option = dialog.findViewById(R.id.form_story_option);
+        option.setText("Edit Story");
+        EditText title = dialog.findViewById(R.id.form_story_title);
+        Button tambah = dialog.findViewById(R.id.form_story_tambah);
+        Button batal = dialog.findViewById(R.id.form_story_batal);
+        title.setText(long_stories.get(0).getJudul());
+        tambah.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                long_stories.get(0).setJudul(title.getText().toString());
+                presenterStory.update(long_stories.get(0));
+                dialog.dismiss();
+            }
+        });
+        batal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+
+        if(!dialog.isShowing())
+            dialog.show();
     }
 
+    @Override
+    public void btnHapus(View view) {
+        AppCompatDialog dialog = new AppCompatDialog(view.getContext());
+        dialog.setContentView(R.layout.form_story);
+        dialog.setTitle("Delete Story");
+        TextView option = dialog.findViewById(R.id.form_story_option);
+        option.setText("Delete Story");
+        EditText title = dialog.findViewById(R.id.form_story_title);
+        Button tambah = dialog.findViewById(R.id.form_story_tambah);
+        Button batal = dialog.findViewById(R.id.form_story_batal);
+        if ((long_stories.size() -1 ) == 0)
+            title.setText(long_stories.get(0).getJudul() );
+        else
+        title.setText(long_stories.get(0).getJudul() + " and " + (long_stories.size() -1 ) + " others");
+        title.setFocusable(false);
+        tambah.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                for (ModelStory temp_story: long_stories) {
+                    presenterStory.delete(temp_story);
+                }
+                dialog.dismiss();
+            }
+        });
+        batal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
 
+        if(!dialog.isShowing())
+            dialog.show();
+    }
+
+    @Override
+    public void btnBack(View view) {
+
+    }
 }

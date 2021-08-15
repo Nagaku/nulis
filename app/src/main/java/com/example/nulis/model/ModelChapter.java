@@ -1,16 +1,34 @@
 package com.example.nulis.model;
 
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.ForeignKey;
+import androidx.room.PrimaryKey;
+
+@Entity(foreignKeys = @ForeignKey(
+        entity = ModelStory.class,
+        parentColumns = "noStory",
+        childColumns = "noStory",
+        onDelete = ForeignKey.CASCADE))
 public class ModelChapter {
 
-    private int noStory;
+    @PrimaryKey
     private int noChapter;
-    private String Judul;
+    @ColumnInfo(name = "noChapPerStory")
+    private int noChapPerStory;
+    @ColumnInfo(name = "noStory")
+    private int noStory;
+    @ColumnInfo(name ="judul")
+    private String judul;
+    @ColumnInfo(name = "isi")
     private String isi;
 
-    public ModelChapter(int noStory, int noChapter, String judul) {
+    public ModelChapter(int noChapter, int noChapPerStory, int noStory, String judul, String isi) {
         this.noStory = noStory;
+        this.noChapPerStory = noChapPerStory;
         this.noChapter = noChapter;
-        this.Judul = judul;
+        this.judul = judul;
+        this.isi = isi;
     }
 
     public int getNoChapter() {
@@ -21,12 +39,28 @@ public class ModelChapter {
         this.noChapter = noChapter;
     }
 
+    public int getNoChapPerStory() {
+        return noChapPerStory;
+    }
+
+    public void setNoChapPerStory(int noChapPerStory) {
+        this.noChapPerStory = noChapPerStory;
+    }
+
     public String getJudul() {
-        return Judul;
+        return judul;
     }
 
     public void setJudul(String judul) {
-        Judul = judul;
+        this.judul = judul;
+    }
+
+    public int getNoStory() {
+        return noStory;
+    }
+
+    public void setNoStory(int noStory) {
+        this.noStory = noStory;
     }
 
     public String getIsi() {

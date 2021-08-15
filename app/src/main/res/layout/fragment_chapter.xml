@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentChapter">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+        android:id="@+id/chapter_isi"
+        android:layout_below="@id/main_ll_1"
+        android:layout_above="@id/main_bnv_1"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="15dp"
+        android:textColor="@color/text_terang"
+        android:text="SAMPLE"
+        android:layout_marginHorizontal="15dp"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:gravity="top|left"
+        android:background="@color/cream"/>
+
+</FrameLayout>

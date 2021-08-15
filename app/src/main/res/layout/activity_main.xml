@@ -13,6 +13,18 @@
         android:layout_width="match_parent"
         android:layout_height="80dp">
 
+        <TextView
+            android:id="@+id/main_title"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="SAMPLE"
+            android:textSize="30dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="15dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/cream"/>
+
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/main_btn_tmbh"
             android:layout_width="70dp"
@@ -23,6 +35,28 @@
             android:background="@drawable/drawable_tambah"
             />
 
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/main_btn_ok"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/drawable_ok"
+            android:visibility="gone"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/main_btn_no"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/main_btn_ok"
+            android:background="@drawable/drawable_batal"
+            android:visibility="gone"
+            />
+
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/main_btn_hapus"
@@ -31,7 +65,7 @@
             android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
             android:layout_marginRight="10dp"
-            android:background="@drawable/drawable_batal"
+            android:background="@drawable/drawable_buang"
             android:visibility="gone"
             />
 
@@ -43,6 +77,17 @@
             android:layout_marginRight="10dp"
             android:layout_toLeftOf="@id/main_btn_hapus"
             android:background="@drawable/drawable_edit"
+            android:visibility="gone"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/main_btn_back"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/main_btn_update"
+            android:background="@drawable/drawable_back"
             android:visibility="gone"
             />
     </RelativeLayout>

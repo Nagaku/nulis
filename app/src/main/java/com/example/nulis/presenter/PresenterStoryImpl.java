@@ -1,5 +1,6 @@
 package com.example.nulis.presenter;
 
+import com.example.nulis.MainActivity;
 import com.example.nulis.model.ModelStory;
 import com.example.nulis.view.ViewStory;
 
@@ -14,6 +15,7 @@ public class PresenterStoryImpl implements PresenterStory{
 
     public PresenterStoryImpl(ViewStory viewStory) {
         this.viewStory = viewStory;
+        stories = MainActivity.db.storyDao().loadAllStory();
         viewStory.onLoad(stories);
     }
 
@@ -23,16 +25,25 @@ public class PresenterStoryImpl implements PresenterStory{
         story.setNoStory(no);
         stories.add(story);
         viewStory.onSave();
+        MainActivity.db.storyDao().addStory(story);
     }
 
     @Override
     public void delete(ModelStory story) {
-
+        stories.remove(story);
+        viewStory.onDelete();
+        MainActivity.db.storyDao().deleteStory(story);
     }
 
     @Override
     public void update(ModelStory story) {
-
+        for (ModelStory perstory: stories) {
+            if (perstory.getNoStory() == story.getNoStory()) {
+                perstory.setJudul(story.getJudul());
+            }
+        }
+        viewStory.onUpdate();
+        MainActivity.db.storyDao().updateStory(story);
     }
 
     @Override

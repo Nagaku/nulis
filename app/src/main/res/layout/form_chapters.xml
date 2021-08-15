@@ -8,14 +8,25 @@
     <ImageView
         android:src="@drawable/drawable_activity_main"
         android:layout_width="match_parent"
-        android:layout_height="140dp"
+        android:layout_height="190dp"
         android:layout_alignParentTop="true"
         android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/form_chapter_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAMPLE"
+        android:textSize="24dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/cream"/>
+
 
 
     <EditText
         android:id="@+id/form_chapter_title"
-        android:layout_alignParentTop="true"
+        android:layout_below="@id/form_chapter_option"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@color/cream"

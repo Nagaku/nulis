@@ -7,18 +7,28 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
+
+import com.example.nulis.model.ModelQuicky;
+import com.example.nulis.presenter.PresenterChapterImpl;
+import com.example.nulis.presenter.PresenterQuicky;
+import com.example.nulis.presenter.PresenterQuickyImpl;
+import com.example.nulis.view.ViewQuicky;
 
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link FragmentExplore#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class FragmentExplore extends Fragment {
+public class FragmentExplore extends Fragment implements ViewQuicky {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+    private EditText isi;
+    private PresenterQuicky pq;
+    private ModelQuicky mq;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -47,6 +57,18 @@ public class FragmentExplore extends Fragment {
     }
 
     @Override
+    public void onHiddenChanged(boolean hidden) {
+        super.onHiddenChanged(hidden);
+        if (!hidden) {
+            MainActivity.getJudul_page().setText("Quicky");
+            pq = new PresenterQuickyImpl(this);
+        } else {
+            this.mq.setIsi(isi.getText().toString());
+            pq.update(this.mq);
+        }
+    }
+
+    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
@@ -59,6 +81,22 @@ public class FragmentExplore extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_explore, container, false);
+        View view = inflater.inflate(R.layout.fragment_explore, container, false);
+        isi = view.findViewById(R.id.quicky);
+        pq = new PresenterQuickyImpl(this);
+        mq = new ModelQuicky(1, "");
+        return view;
+    }
+
+    @Override
+    public void onLoad(ModelQuicky mq) {
+        this.mq = mq;
+        isi.setText(mq.getIsi().toString());
+    }
+
+
+    @Override
+    public void onUpdate() {
+        pq.load();
     }
 }

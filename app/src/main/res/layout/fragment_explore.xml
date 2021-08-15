@@ -5,14 +5,19 @@
     android:layout_height="match_parent"
     tools:context=".FragmentExplore">
 
-    <!-- TODO: Update blank fragment layout -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/explore_rv_1"
+    <EditText
+        android:id="@+id/quicky"
         android:layout_below="@id/main_ll_1"
         android:layout_above="@id/main_bnv_1"
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
+        android:paddingLeft="15dp"
+        android:textColor="@color/text_terang"
+        android:text="SAMPLE"
         android:layout_marginHorizontal="15dp"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:gravity="top|left"
         android:background="@color/cream"/>
 
 </FrameLayout>

@@ -48,6 +48,10 @@
         "source": "D:\\AndroidStudioProjects\\Nulis\\app\\src\\main\\res\\layout\\fragment_chapters.xml"
     },
     {
+        "merged": "D:\\AndroidStudioProjects\\Nulis\\app\\build\\intermediates\\res\\merged\\debug\\drawable_drawable_back.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\Nulis\\app\\src\\main\\res\\drawable\\drawable_back.xml"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\Nulis\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
         "source": "D:\\AndroidStudioProjects\\Nulis\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
     },
@@ -60,8 +64,16 @@
         "source": "D:\\AndroidStudioProjects\\Nulis\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
+        "merged": "D:\\AndroidStudioProjects\\Nulis\\app\\build\\intermediates\\res\\merged\\debug\\drawable_assets_back.png.flat",
+        "source": "D:\\AndroidStudioProjects\\Nulis\\app\\src\\main\\res\\drawable\\assets_back.png"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\Nulis\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "D:\\AndroidStudioProjects\\Nulis\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\Nulis\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_chapter.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\Nulis\\app\\src\\main\\res\\layout\\fragment_chapter.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\Nulis\\app\\build\\intermediates\\res\\merged\\debug\\drawable_assets_ok.png.flat",
@@ -84,6 +96,10 @@
         "source": "D:\\AndroidStudioProjects\\Nulis\\app\\src\\main\\res\\drawable\\assets_plus.png"
     },
     {
+        "merged": "D:\\AndroidStudioProjects\\Nulis\\app\\build\\intermediates\\res\\merged\\debug\\drawable_assets_edit.png.flat",
+        "source": "D:\\AndroidStudioProjects\\Nulis\\app\\src\\main\\res\\drawable\\assets_edit.png"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\Nulis\\app\\build\\intermediates\\res\\merged\\debug\\layout_recycle_view_item.xml.flat",
         "source": "D:\\AndroidStudioProjects\\Nulis\\app\\src\\main\\res\\layout\\recycle_view_item.xml"
     },
@@ -102,6 +118,10 @@
     {
         "merged": "D:\\AndroidStudioProjects\\Nulis\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_explore.xml.flat",
         "source": "D:\\AndroidStudioProjects\\Nulis\\app\\src\\main\\res\\layout\\fragment_explore.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\Nulis\\app\\build\\intermediates\\res\\merged\\debug\\drawable_drawable_edit.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\Nulis\\app\\src\\main\\res\\drawable\\drawable_edit.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\Nulis\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
@@ -160,10 +180,6 @@
         "source": "D:\\AndroidStudioProjects\\Nulis\\app\\src\\main\\res\\drawable\\wooden_cartoon.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\Nulis\\app\\build\\intermediates\\res\\merged\\debug\\layout_form_chapter.xml.flat",
-        "source": "D:\\AndroidStudioProjects\\Nulis\\app\\src\\main\\res\\layout\\form_chapter.xml"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\Nulis\\app\\build\\intermediates\\res\\merged\\debug\\drawable_splash_screen.png.flat",
         "source": "D:\\AndroidStudioProjects\\Nulis\\app\\src\\main\\res\\drawable\\splash_screen.png"
     },
@@ -182,6 +198,10 @@
     {
         "merged": "D:\\AndroidStudioProjects\\Nulis\\app\\build\\intermediates\\res\\merged\\debug\\layout_recycle_view_chapters.xml.flat",
         "source": "D:\\AndroidStudioProjects\\Nulis\\app\\src\\main\\res\\layout\\recycle_view_chapters.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\Nulis\\app\\build\\intermediates\\res\\merged\\debug\\drawable_recycle_long.png.flat",
+        "source": "D:\\AndroidStudioProjects\\Nulis\\app\\src\\main\\res\\drawable\\recycle_long.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\Nulis\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bottom.png.flat",

@@ -1691,6 +1691,8 @@ drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable assets
+drawable assets_back
+drawable assets_edit
 drawable assets_ok
 drawable assets_plus
 drawable assets_recycle
@@ -1714,8 +1716,10 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable drawable_activity_main
+drawable drawable_back
 drawable drawable_batal
 drawable drawable_buang
+drawable drawable_edit
 drawable drawable_ok
 drawable drawable_splash_screen
 drawable drawable_tambah
@@ -1761,6 +1765,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable profile
+drawable recycle_long
 drawable splash_screen
 drawable test_custom_background
 drawable tooltip_frame_dark
@@ -1864,6 +1869,7 @@ id center_horizontal
 id center_vertical
 id chain
 id chains
+id chapter_isi
 id chapter_rv_1
 id checkbox
 id checked
@@ -1929,7 +1935,6 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
-id explore_rv_1
 id fade
 id fill
 id fill_horizontal
@@ -1941,9 +1946,11 @@ id flip
 id floating
 id forever
 id form_chapter_batal
+id form_chapter_option
 id form_chapter_tambah
 id form_chapter_title
 id form_story_batal
+id form_story_option
 id form_story_tambah
 id form_story_title
 id fragment_container_view_tag
@@ -1985,9 +1992,15 @@ id linear
 id listMode
 id list_item
 id main_bnv_1
+id main_btn_back
+id main_btn_hapus
+id main_btn_no
+id main_btn_ok
 id main_btn_tmbh
+id main_btn_update
 id main_ll_1
 id main_rv_1
+id main_title
 id masked
 id material_clock_display
 id material_clock_face
@@ -2078,10 +2091,12 @@ id position
 id postLayout
 id progress_circular
 id progress_horizontal
+id quicky
 id radio
 id ratio
 id rectangles
 id recycle_view_base
+id recycle_view_chapter_base
 id recycle_view_chapter_judul
 id recycle_view_chapter_no
 id recycle_view_judul
@@ -2298,9 +2313,9 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout form_chapter
 layout form_chapters
 layout form_story
+layout fragment_chapter
 layout fragment_chapters
 layout fragment_explore
 layout fragment_profile
