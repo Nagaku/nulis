@@ -24,12 +24,12 @@
         "source": "D:\\AndroidStudioProjects\\Nulis\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\Nulis\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "D:\\AndroidStudioProjects\\Nulis\\app\\src\\main\\res\\layout\\activity_main.xml"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\Nulis\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_tulis.xml.flat",
         "source": "D:\\AndroidStudioProjects\\Nulis\\app\\src\\main\\res\\layout\\fragment_tulis.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\Nulis\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\Nulis\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\Nulis\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
@@ -50,6 +50,14 @@
     {
         "merged": "D:\\AndroidStudioProjects\\Nulis\\app\\build\\intermediates\\res\\merged\\debug\\drawable_drawable_back.xml.flat",
         "source": "D:\\AndroidStudioProjects\\Nulis\\app\\src\\main\\res\\drawable\\drawable_back.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\Nulis\\app\\build\\intermediates\\res\\merged\\debug\\drawable_quicky.png.flat",
+        "source": "D:\\AndroidStudioProjects\\Nulis\\app\\src\\main\\res\\drawable\\quicky.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\Nulis\\app\\build\\intermediates\\res\\merged\\debug\\drawable_profile_icon.png.flat",
+        "source": "D:\\AndroidStudioProjects\\Nulis\\app\\src\\main\\res\\drawable\\profile_icon.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\Nulis\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
@@ -166,6 +174,10 @@
     {
         "merged": "D:\\AndroidStudioProjects\\Nulis\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background.png.flat",
         "source": "D:\\AndroidStudioProjects\\Nulis\\app\\src\\main\\res\\drawable\\background.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\Nulis\\app\\build\\intermediates\\res\\merged\\debug\\drawable_nulis.png.flat",
+        "source": "D:\\AndroidStudioProjects\\Nulis\\app\\src\\main\\res\\drawable\\nulis.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\Nulis\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",

@@ -86,15 +86,15 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\mi
 	android:roundIcon
 		ADDED from D:\AndroidStudioProjects\Nulis\app\src\main\AndroidManifest.xml:9:9-54
 	android:icon
-		ADDED from D:\AndroidStudioProjects\Nulis\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from D:\AndroidStudioProjects\Nulis\app\src\main\AndroidManifest.xml:7:9-39
 	android:allowBackup
 		ADDED from D:\AndroidStudioProjects\Nulis\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from D:\AndroidStudioProjects\Nulis\app\src\main\AndroidManifest.xml:11:9-43
-activity#com.example.nulis.SplashActivity
+activity#com.michael.nulis.SplashActivity
 ADDED from D:\AndroidStudioProjects\Nulis\app\src\main\AndroidManifest.xml:12:9-18:20
 	android:name
-		ADDED from D:\AndroidStudioProjects\Nulis\app\src\main\AndroidManifest.xml:12:19-49
+		ADDED from D:\AndroidStudioProjects\Nulis\app\src\main\AndroidManifest.xml:12:19-66
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from D:\AndroidStudioProjects\Nulis\app\src\main\AndroidManifest.xml:13:13-17:29
 action#android.intent.action.MAIN
@@ -105,10 +105,10 @@ category#android.intent.category.LAUNCHER
 ADDED from D:\AndroidStudioProjects\Nulis\app\src\main\AndroidManifest.xml:16:17-77
 	android:name
 		ADDED from D:\AndroidStudioProjects\Nulis\app\src\main\AndroidManifest.xml:16:27-74
-activity#com.example.nulis.MainActivity
-ADDED from D:\AndroidStudioProjects\Nulis\app\src\main\AndroidManifest.xml:19:9-50
+activity#com.michael.nulis.MainActivity
+ADDED from D:\AndroidStudioProjects\Nulis\app\src\main\AndroidManifest.xml:19:9-67
 	android:name
-		ADDED from D:\AndroidStudioProjects\Nulis\app\src\main\AndroidManifest.xml:19:19-47
+		ADDED from D:\AndroidStudioProjects\Nulis\app\src\main\AndroidManifest.xml:19:19-64
 uses-sdk
 INJECTED from D:\AndroidStudioProjects\Nulis\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\AndroidStudioProjects\Nulis\app\src\main\AndroidManifest.xml

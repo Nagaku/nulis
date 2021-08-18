@@ -1,87 +1,87 @@
-com/example/nulis/presenter/PresenterStoryImpl.java
- com.example.nulis.presenter.PresenterStoryImpl
-com/example/nulis/view/ViewQuicky.java
- com.example.nulis.view.ViewQuicky
-com/example/nulis/BuildConfig.java
- com.example.nulis.BuildConfig
-com/example/nulis/view/ViewChapter.java
- com.example.nulis.view.ViewChapter
-com/example/nulis/adapter/MainRecycleAdapter.java
- com.example.nulis.adapter.MainRecycleAdapter
- com.example.nulis.adapter.MainRecycleAdapter$OnCallbackListener
- com.example.nulis.adapter.MainRecycleAdapter$OnLongCallbackListener
- com.example.nulis.adapter.MainRecycleAdapter$ViewHolder
- com.example.nulis.adapter.MainRecycleAdapter$ViewHolder$1
-com/example/nulis/FragmentChapters.java
- com.example.nulis.FragmentChapters
- com.example.nulis.FragmentChapters$1
- com.example.nulis.FragmentChapters$2
- com.example.nulis.FragmentChapters$3
- com.example.nulis.FragmentChapters$4
- com.example.nulis.FragmentChapters$5
- com.example.nulis.FragmentChapters$6
- com.example.nulis.FragmentChapters$7
- com.example.nulis.FragmentChapters$8
-com/example/nulis/model/AppDatabase.java
- com.example.nulis.model.AppDatabase
-com/example/nulis/model/DaoQuicky.java
- com.example.nulis.model.DaoQuicky
-com/example/nulis/presenter/PresenterStory.java
- com.example.nulis.presenter.PresenterStory
-com/example/nulis/model/DaoStory.java
- com.example.nulis.model.DaoStory
-com/example/nulis/adapter/ChaptersRecycleAdapter.java
- com.example.nulis.adapter.ChaptersRecycleAdapter
- com.example.nulis.adapter.ChaptersRecycleAdapter$OnCallbackListener
- com.example.nulis.adapter.ChaptersRecycleAdapter$OnLongCallbackListener
- com.example.nulis.adapter.ChaptersRecycleAdapter$ViewHolder
- com.example.nulis.adapter.ChaptersRecycleAdapter$ViewHolder$1
-com/example/nulis/presenter/GlobalFragment.java
- com.example.nulis.presenter.GlobalFragment
-com/example/nulis/model/ModelStory.java
- com.example.nulis.model.ModelStory
-com/example/nulis/FragmentProfile.java
- com.example.nulis.FragmentProfile
-com/example/nulis/model/ModelQuicky.java
- com.example.nulis.model.ModelQuicky
-com/example/nulis/model/ModelChapter.java
- com.example.nulis.model.ModelChapter
-com/example/nulis/presenter/PresenterChapter.java
- com.example.nulis.presenter.PresenterChapter
-com/example/nulis/presenter/PresenterQuickyImpl.java
- com.example.nulis.presenter.PresenterQuickyImpl
-com/example/nulis/SplashActivity.java
- com.example.nulis.SplashActivity
- com.example.nulis.SplashActivity$1
-com/example/nulis/view/ViewStory.java
- com.example.nulis.view.ViewStory
-com/example/nulis/model/DaoChapter.java
- com.example.nulis.model.DaoChapter
-com/example/nulis/FragmentTulis.java
- com.example.nulis.FragmentTulis
- com.example.nulis.FragmentTulis$1
- com.example.nulis.FragmentTulis$2
- com.example.nulis.FragmentTulis$3
- com.example.nulis.FragmentTulis$4
- com.example.nulis.FragmentTulis$5
- com.example.nulis.FragmentTulis$6
- com.example.nulis.FragmentTulis$7
- com.example.nulis.FragmentTulis$8
-com/example/nulis/FragmentChapter.java
- com.example.nulis.FragmentChapter
- com.example.nulis.FragmentChapter$1
- com.example.nulis.FragmentChapter$2
-com/example/nulis/presenter/PresenterChapterImpl.java
- com.example.nulis.presenter.PresenterChapterImpl
-com/example/nulis/presenter/PresenterQuicky.java
- com.example.nulis.presenter.PresenterQuicky
-com/example/nulis/MainActivity.java
- com.example.nulis.MainActivity
- com.example.nulis.MainActivity$1
- com.example.nulis.MainActivity$2
- com.example.nulis.MainActivity$3
- com.example.nulis.MainActivity$4
- com.example.nulis.MainActivity$5
- com.example.nulis.MainActivity$page
-com/example/nulis/FragmentExplore.java
- com.example.nulis.FragmentExplore
+com/michael/nulis/FragmentChapters.java
+ com.michael.nulis.FragmentChapters
+ com.michael.nulis.FragmentChapters$1
+ com.michael.nulis.FragmentChapters$2
+ com.michael.nulis.FragmentChapters$3
+ com.michael.nulis.FragmentChapters$4
+ com.michael.nulis.FragmentChapters$5
+ com.michael.nulis.FragmentChapters$6
+ com.michael.nulis.FragmentChapters$7
+ com.michael.nulis.FragmentChapters$8
+com/michael/nulis/FragmentProfile.java
+ com.michael.nulis.FragmentProfile
+com/michael/nulis/adapter/MainRecycleAdapter.java
+ com.michael.nulis.adapter.MainRecycleAdapter
+ com.michael.nulis.adapter.MainRecycleAdapter$OnCallbackListener
+ com.michael.nulis.adapter.MainRecycleAdapter$OnLongCallbackListener
+ com.michael.nulis.adapter.MainRecycleAdapter$ViewHolder
+ com.michael.nulis.adapter.MainRecycleAdapter$ViewHolder$1
+com/michael/nulis/view/ViewChapter.java
+ com.michael.nulis.view.ViewChapter
+com/michael/nulis/view/ViewQuicky.java
+ com.michael.nulis.view.ViewQuicky
+com/michael/nulis/presenter/PresenterStoryImpl.java
+ com.michael.nulis.presenter.PresenterStoryImpl
+com/michael/nulis/SplashActivity.java
+ com.michael.nulis.SplashActivity
+ com.michael.nulis.SplashActivity$1
+com/michael/nulis/model/ModelQuicky.java
+ com.michael.nulis.model.ModelQuicky
+com/michael/nulis/MainActivity.java
+ com.michael.nulis.MainActivity
+ com.michael.nulis.MainActivity$1
+ com.michael.nulis.MainActivity$2
+ com.michael.nulis.MainActivity$3
+ com.michael.nulis.MainActivity$4
+ com.michael.nulis.MainActivity$5
+ com.michael.nulis.MainActivity$page
+com/michael/nulis/FragmentTulis.java
+ com.michael.nulis.FragmentTulis
+ com.michael.nulis.FragmentTulis$1
+ com.michael.nulis.FragmentTulis$2
+ com.michael.nulis.FragmentTulis$3
+ com.michael.nulis.FragmentTulis$4
+ com.michael.nulis.FragmentTulis$5
+ com.michael.nulis.FragmentTulis$6
+ com.michael.nulis.FragmentTulis$7
+ com.michael.nulis.FragmentTulis$8
+com/michael/nulis/presenter/PresenterChapterImpl.java
+ com.michael.nulis.presenter.PresenterChapterImpl
+com/michael/nulis/model/ModelStory.java
+ com.michael.nulis.model.ModelStory
+com/michael/nulis/BuildConfig.java
+ com.michael.nulis.BuildConfig
+com/michael/nulis/presenter/PresenterStory.java
+ com.michael.nulis.presenter.PresenterStory
+com/michael/nulis/model/DaoStory.java
+ com.michael.nulis.model.DaoStory
+com/michael/nulis/presenter/GlobalFragment.java
+ com.michael.nulis.presenter.GlobalFragment
+com/michael/nulis/adapter/ChaptersRecycleAdapter.java
+ com.michael.nulis.adapter.ChaptersRecycleAdapter
+ com.michael.nulis.adapter.ChaptersRecycleAdapter$OnCallbackListener
+ com.michael.nulis.adapter.ChaptersRecycleAdapter$OnLongCallbackListener
+ com.michael.nulis.adapter.ChaptersRecycleAdapter$ViewHolder
+ com.michael.nulis.adapter.ChaptersRecycleAdapter$ViewHolder$1
+com/michael/nulis/FragmentChapter.java
+ com.michael.nulis.FragmentChapter
+ com.michael.nulis.FragmentChapter$1
+ com.michael.nulis.FragmentChapter$2
+com/michael/nulis/model/ModelChapter.java
+ com.michael.nulis.model.ModelChapter
+com/michael/nulis/model/AppDatabase.java
+ com.michael.nulis.model.AppDatabase
+com/michael/nulis/presenter/PresenterQuicky.java
+ com.michael.nulis.presenter.PresenterQuicky
+com/michael/nulis/FragmentExplore.java
+ com.michael.nulis.FragmentExplore
+com/michael/nulis/model/DaoQuicky.java
+ com.michael.nulis.model.DaoQuicky
+com/michael/nulis/model/DaoChapter.java
+ com.michael.nulis.model.DaoChapter
+com/michael/nulis/presenter/PresenterChapter.java
+ com.michael.nulis.presenter.PresenterChapter
+com/michael/nulis/view/ViewStory.java
+ com.michael.nulis.view.ViewStory
+com/michael/nulis/presenter/PresenterQuickyImpl.java
+ com.michael.nulis.presenter.PresenterQuickyImpl

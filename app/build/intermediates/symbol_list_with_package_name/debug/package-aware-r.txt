@@ -1,4 +1,4 @@
-com.example.nulis
+com.michael.nulis
 anim abc_fade_in
 anim abc_fade_out
 anim abc_grow_fade_in_from_bottom
@@ -1764,7 +1764,10 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable nulis
 drawable profile
+drawable profile_icon
+drawable quicky
 drawable recycle_long
 drawable splash_screen
 drawable test_custom_background

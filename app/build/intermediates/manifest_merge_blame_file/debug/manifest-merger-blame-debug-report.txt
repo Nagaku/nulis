@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.example.nulis"
+3    package="com.michael.nulis"
 4    android:versionCode="1"
 5    android:versionName="1.0" >
 6
@@ -17,8 +17,8 @@
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 13-->[androidx.core:core:1.5.0] C:\Users\mimel\.gradle\caches\transforms-2\files-2.1\1602505273d43f41d2f450ba7fa6ad4f\core-1.5.0\AndroidManifest.xml:24:18-86
 14        android:debuggable="true"
-15        android:icon="@mipmap/ic_launcher"
-15-->D:\AndroidStudioProjects\Nulis\app\src\main\AndroidManifest.xml:7:9-43
+15        android:icon="@drawable/nulis"
+15-->D:\AndroidStudioProjects\Nulis\app\src\main\AndroidManifest.xml:7:9-39
 16        android:label="@string/app_name"
 16-->D:\AndroidStudioProjects\Nulis\app\src\main\AndroidManifest.xml:8:9-41
 17        android:roundIcon="@mipmap/ic_launcher_round"
@@ -28,9 +28,9 @@
 19        android:testOnly="true"
 20        android:theme="@style/Theme.Nulis" >
 20-->D:\AndroidStudioProjects\Nulis\app\src\main\AndroidManifest.xml:11:9-43
-21        <activity android:name="com.example.nulis.SplashActivity" >
+21        <activity android:name="com.michael.nulis.SplashActivity" >
 21-->D:\AndroidStudioProjects\Nulis\app\src\main\AndroidManifest.xml:12:9-18:20
-21-->D:\AndroidStudioProjects\Nulis\app\src\main\AndroidManifest.xml:12:19-49
+21-->D:\AndroidStudioProjects\Nulis\app\src\main\AndroidManifest.xml:12:19-66
 22            <intent-filter>
 22-->D:\AndroidStudioProjects\Nulis\app\src\main\AndroidManifest.xml:13:13-17:29
 23                <action android:name="android.intent.action.MAIN" />
@@ -42,9 +42,9 @@
 25-->D:\AndroidStudioProjects\Nulis\app\src\main\AndroidManifest.xml:16:27-74
 26            </intent-filter>
 27        </activity>
-28        <activity android:name="com.example.nulis.MainActivity" />
-28-->D:\AndroidStudioProjects\Nulis\app\src\main\AndroidManifest.xml:19:9-50
-28-->D:\AndroidStudioProjects\Nulis\app\src\main\AndroidManifest.xml:19:19-47
+28        <activity android:name="com.michael.nulis.MainActivity" />
+28-->D:\AndroidStudioProjects\Nulis\app\src\main\AndroidManifest.xml:19:9-67
+28-->D:\AndroidStudioProjects\Nulis\app\src\main\AndroidManifest.xml:19:19-64
 29
 30        <service
 30-->[androidx.room:room-runtime:2.3.0] C:\Users\mimel\.gradle\caches\transforms-2\files-2.1\4697116d8dfb0587edd7e3636671009b\room-runtime-2.3.0\AndroidManifest.xml:25:9-28:40

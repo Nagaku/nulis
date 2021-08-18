@@ -13,7 +13,6 @@
         android:layout_height="fill_parent"
         android:paddingLeft="15dp"
         android:textColor="@color/text_terang"
-        android:text="SAMPLE"
         android:layout_marginHorizontal="15dp"
         android:inputType="textMultiLine"
         android:singleLine="false"
